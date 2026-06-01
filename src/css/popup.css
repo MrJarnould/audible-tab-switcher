@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+#container {
+    padding: 15px;
+}
+
+h1 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Hide elements by default */
+#no-audible {
+    display: none;
+}
+
+/* Class to show the element when needed */
+#no-audible.visible {
+    display: block;
+}
+
+#controls {
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+#cycle-button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+#cycle-button:hover {
+    background-color: #3367d6;
+}
+
+#cycle-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#shortcut-info {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #666;
+}
+
+.no-shortcut-msg {
+    color: #c17f00;
+    font-weight: 500;
+}
+
+#shortcut-info {
+    cursor: help;
+}
+
+kbd {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    color: #333;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1.4;
+    margin: 0 0.2em;
+    padding: 0.1em 0.6em;
+}
+
+#audible-tabs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#audible-tabs li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#audible-tabs li:hover {
+    background-color: #f5f5f5;
+}
+
+#audible-tabs li:last-child {
+    border-bottom: none;
+}
+
+.favicon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.tab-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+}

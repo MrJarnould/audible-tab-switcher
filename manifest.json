@@ -1,0 +1,37 @@
+{
+	"manifest_version": 3,
+	"name": "Audible Tab Switcher",
+	"version": "1.0.0",
+	"description": "Cycle through Chrome tabs that are playing audio.",
+	"action": {
+		"default_popup": "src/popup.html",
+		"default_icon": {
+			"16": "src/assets/icon16.png",
+			"48": "src/assets/icon48.png",
+			"128": "src/assets/icon128.png"
+		}
+	},
+	"icons": {
+		"16": "src/assets/icon16.png",
+		"48": "src/assets/icon48.png",
+		"128": "src/assets/icon128.png"
+	},
+	"background": {
+		"service_worker": "src/js/background.js"
+	},
+	"permissions": [
+		"tabs",
+		"storage"
+	],
+	"commands": {
+		"switch-to-audible-tab": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+A"
+			},
+			"description": "Switch to the audible tab"
+		}
+	},
+	"externally_connectable": {
+		"matches": [ "*://localhost/*", "file:///*" ]
+	}
+}
