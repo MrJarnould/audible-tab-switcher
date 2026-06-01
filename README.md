@@ -36,12 +36,23 @@ find-audible-tabs-extension/
 
 ## Installation
 
-1. Clone or download this repository
-2. Open Chrome and navigate to `chrome://extensions/`
-3. Enable "Developer mode" (toggle in the top-right corner)
-4. Click "Load unpacked" and select the extension folder
-5. The extension icon should appear in your Chrome toolbar
-6. Note your extension ID from the extensions page (you'll need it for external integrations)
+This extension works in any Chromium-based browser (Google Chrome, Microsoft Edge, Brave, Vivaldi, Opera, etc.).
+
+1. **Download the extension** — click **Code → Download ZIP** on this page, then unzip the downloaded file
+2. **Open your browser's extension page** — navigate to the URL for your browser:
+
+   | Browser | URL |
+   |---|---|
+   | Chrome | `chrome://extensions` |
+   | Edge | `edge://extensions` |
+   | Brave | `brave://extensions` |
+   | Vivaldi | `vivaldi://extensions` |
+   | Opera | `opera://extensions` |
+
+3. **Enable Developer mode** — toggle the "Developer mode" switch in the top-right corner of the extensions page
+4. **Load the extension** — click "Load unpacked" and select the unzipped folder
+5. The extension icon will appear in your browser toolbar
+6. Note your extension ID shown on the extensions page — you will need it for external integrations
 
 ## Usage
 
@@ -57,7 +68,7 @@ The default shortcut is `Cmd+Shift+A` on Mac and `Ctrl+Shift+A` on Windows/Linux
 
 ### Customizing the Keyboard Shortcut
 
-1. Go to `chrome://extensions/shortcuts` in Chrome
+1. Go to the shortcuts page for your browser (`chrome://extensions/shortcuts`, `edge://extensions/shortcuts`, etc.)
 2. Find "Audible Tab Switcher" in the list
 3. Click the pencil icon next to "Switch to the audible tab"
 4. Press your desired key combination
@@ -73,7 +84,7 @@ You can trigger the extension from external applications like SketchyBar using t
 open -a "Google Chrome" "chrome-extension://YOUR_EXTENSION_ID/src/cycle.html#cycle"
 ```
 
-Replace `YOUR_EXTENSION_ID` with your actual extension ID from `chrome://extensions/`. When opened, the page advances the cycle to the next audible tab and closes itself automatically.
+Replace `YOUR_EXTENSION_ID` with your actual extension ID from your browser's extensions page. When opened, the page advances the cycle to the next audible tab and closes itself automatically.
 
 Alternatively, you can trigger the cycle by sending a keystroke directly:
 
